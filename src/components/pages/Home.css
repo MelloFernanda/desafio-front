@@ -49,10 +49,6 @@
 
 
 
-#saite{
-    margin-top: 1.5%;
-    width: 15.5vw;
-}
 .noticias{
     background-color: #444df1;
     position: relative;
@@ -70,6 +66,10 @@ h1 span{
 }
 .textnoticia{
     position: absolute;
+}
+#saite{
+    margin-top: 1.5%;
+    width: 15.5vw;
 }
 #text1{
     color: white;
@@ -108,12 +108,12 @@ h1 span{
 .menu2{
     min-width: 100%;
     height: 110%;
-    display: inline;
+    display: inline-block;
     cursor: pointer;
     font-size: 2vw;
 }
 .menu2 #coluna33:hover{
-    background-color: #b6eaff;
+    background-color: #c4e9f8;
 }
 #quadrado{
     width: 3.2vw;
@@ -128,9 +128,10 @@ h1 span{
     padding: 1%;
     float: left;
     text-align: center;
-    border-width: 2px;
+    border-width: 1px;
+    border-bottom: 3px;
     border-style: solid;
-    border-color: rgba(128, 128, 128, .7);
+    border-color: rgba(128, 128, 128, .4);
     height: 6vw;
 }
 .coluna30{
@@ -152,36 +153,62 @@ h1 span{
 
 
 
-h2#divprojeto{
-    background-color: black;
+.projetos{
     display: flex;
     flex-direction: row;
+    margin-top: 25px;
 }
-.projetos #div1projeto{
+#div1projeto{
     background-color: #444df1;
     font-size: larger;
     color: white;
     text-align: center;
-    max-width: 200px;
-    width: auto;
-    height: 240px;
-    margin-top: 100px;
-    margin-left: 15px;
+    margin-left: 2%;
+    height: 320px;
+    margin-left: 25px;
+    padding: 70px 50px;
 }
 #nossosprojetos{
-    position:absolute;
     width: 100px;
-    margin-left: 50px;
-    margin-top: 80px;
+    margin-top: 45%;
+    font-size:xx-large;
 }
-.projetos #div2projeto{
-    float: right;
-    align-items:flex-start;
-    border: #f51051;
-    border-style: solid;
+#div2projeto{
+    margin-right: 100%;
+    display: grid;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 8%;
+    
+}
+#projeto1, #projeto2, #projeto3, #projeto4 {
+    background-color: #E7F6FC;
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10px;
+    border-radius: 4px; 
+}
+button{
+    position: relative;
+    margin-top: 50px;
+    color: white;
+    background-color: #f51051;
+    border: none;
     width: 65%;
-    height: 290px;
+    border-radius: 5px;
 }
+.wrapper{
+    display: grid;
+    grid-template-columns: 28vw 28vw; 
+}
+.wrapper p{
+    height: 4vw;
+}
+
 
 
 #numeros{
@@ -214,9 +241,9 @@ h2#divprojeto{
 
 
 #descricao_equipe{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size:1.5vw;
-    color: black;
+    color:rgba(50, 50, 50, 1)
 }
 #equipe{
     background-color:#444df1;
@@ -322,7 +349,6 @@ h2#divprojeto{
 
 #rodape{
     max-height: 50px;
-    min-height: none;
     height: auto;
     background-color: #dadada;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;

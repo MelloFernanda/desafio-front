@@ -80,11 +80,27 @@ function Home (){
 
 
         <h2 className='projetos'>
-            <div id="divprojeto">
-                <div id='div1projeto'>
+            <div id='div1projeto'>
                 <p id='nossosprojetos'>Nossos Projetos</p>
+            </div>
+
+            <div className="wrapper" id='div2projeto'>
+                <div id='projeto1'>
+                    <p></p>
+                    <button className="botao" type="butoon">Clique</button>
                 </div>
-                
+                <div id='projeto2'>
+                    <p></p>
+                    <button className="botao" type="butoon">Clique</button>
+                </div>
+                <div id='projeto3'>
+                    <p></p>
+                    <button className="botao" type="butoon">Clique</button>
+                </div>
+                <div id='projeto4'>
+                    <p></p>
+                    <button className="botao">Clique</button>
+                </div>
             </div>
         </h2>
         
