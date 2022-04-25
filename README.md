@@ -1,6 +1,6 @@
 # Desafio Front
 
-Desafio de front UNASUS com intuíto de teste de conhecimento e habilidade em tecnologias fornt-end.
+Desafio de front UNASUS com intúito de realizar um teste de conhecimento e habilidade em tecnologias fornt-end.
 
 ## Tecnologias Utilizadas
 
