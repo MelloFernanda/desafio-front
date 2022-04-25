@@ -78,9 +78,13 @@ function Home (){
         </h2>
 
 
+
         <h2 className='projetos'>
-            <div id='div1projeto'>
+            <div id="divprojeto">
+                <div id='div1projeto'>
                 <p id='nossosprojetos'>Nossos Projetos</p>
+                </div>
+                
             </div>
         </h2>
         
