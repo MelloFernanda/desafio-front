@@ -1,0 +1,507 @@
+/*================= GERAL =========================*/
+*{
+    border: none;
+    list-style-type: none;
+    scroll-behavior: smooth;
+}
+
+:root{
+    font-size: 1vw;
+
+    --primary-color: #4441DF;
+    --primary-color-077: rgba(68, 65, 223, 0.77);
+    --segundary-color: #F51051;
+    --third-color: #E7F6FC;
+    --back-acessibility: #dadada;
+  }
+
+  button{
+      cursor: pointer;
+  }
+
+  h2{
+    font-size: 3vw;
+    text-align: center;
+  }
+
+
+
+/*============ ACCESSIBILITY ========================*/
+
+.acessibility{
+    background-color: var(--back-acessibility);
+    padding: 1vw 10vw 1vw 1vw;
+}
+
+.acessibility img{
+    width: 1vw;
+}
+
+.acessibility li{
+    display: inline-block;
+    cursor: pointer;
+    
+    font-size: 1.1vw;
+
+    border: 1px solid var(--back-acessibility);
+    border-radius: 100px;
+}
+
+.acessibility li:hover{
+    background-color: whitesmoke;
+    border: 1px solid var(--primary-color);
+    border-radius: 100px;
+}
+
+.acessibility ul{
+    display: flex;
+    justify-content: flex-end;
+
+    gap: 2vw;
+}
+
+.acessibility li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.acessibility #facebook,
+.acessibility #instagram{
+    width: 1.3vw;
+}
+.acessibility d{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#text{
+    padding-inline: 1vw;
+}
+
+/*================= MENU =========================*/
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    
+    text-align: center;
+    justify-content: space-around;
+}
+
+
+.menu li{
+    display: inline-block;
+    padding: 2vw;
+    font-size: 1.4vw;
+    cursor: pointer;
+}
+.menu li:hover{
+    background-color: #4441DF;
+    color: white;
+}
+
+.imagemSaite{
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+}
+
+#logoSaite img{
+    height: 5.5vw;
+}
+#descricaoSaite img{
+    height: 3vw;
+}
+/*================= WRAPPER =========================*/
+
+header #wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    color: white;
+    background-color: var(--primary-color-077);
+}
+
+.saite,
+.saitedescription{
+    display: flex;
+    align-items: center;
+    
+    width: 50%;
+    height: 30vw;
+}
+
+.saite{
+    text-transform: uppercase;
+    font-size: 5rem;
+    justify-content: center;
+}
+
+.saitedescription{
+    font-size: 2vw;
+    flex-direction: column;
+    gap: 3vw;
+    padding: 6vw 30px 0px 80px;
+}
+
+header #wrapper::before{
+    content: '';
+
+    width: 100%;
+    height: 30vw;
+
+    display: block;
+
+    position: absolute;
+    z-index: -1;
+    background-color: var(--primary-color);
+    background-image: url("../../../assents/img/FOTOGRAFIA\ -\ PCD\ MULHERES-02\ 1.png");
+    background-position: left;
+    background-size: contain;
+    
+}
+
+#wrapper button{
+    background-color: var(--segundary-color);
+    color: white;
+    font-size: 1.7rem;
+    border: none;
+    border-radius: 7px;
+
+    height: 3rem;
+    width: 28rem;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2vmin;
+    
+}
+
+/*============ NAVIGATION ========================*/
+
+.navigation{
+    width: 100%;
+    justify-content: space-between;
+}
+
+.navigation,
+.navigation div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navigation div{
+    display: flex;
+
+    border-width: 1px;
+    border-bottom: 3px;
+    border-style: solid;
+    border-color: rgba(128, 128, 128, .4);
+
+    height: 10vw;
+    width: 33.33%;
+}
+
+.navigation h2 {
+    padding: 5vw;
+}
+
+.navigation h2{
+    font-size: 2vw;
+}
+
+.navigation div:hover{
+    background-color: var(--third-color);
+    cursor: pointer;
+}
+
+.navigation svg{
+    height: 6vw;
+}
+
+.navigation .caixa{
+    border: none;
+    height: auto;
+}
+/*========= NOSSOS PROJETOS ========================*/
+
+.NossosProjetos{
+    padding: 12vw 0px;
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.textProjects{
+    background-color: var(--primary-color);
+    padding: 16vw 7vw;
+}
+
+.projects{
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: 33vw 33vw; 
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+    
+    margin-right: 100%;
+    margin-left: 2%;
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.NossosProjetos #project1,
+.NossosProjetos #project2,
+.NossosProjetos #project3,
+.NossosProjetos #project4 {
+    background-color: var(--third-color);
+    display: block;
+    width: 30vw;
+    height: 12vw;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 1vw 1vw -2vw 1vw;
+}
+
+.projects button {
+
+    background-color: var(--segundary-color);
+    color: white;
+    font-size: 1.7rem;
+    border-radius: 7px;
+
+    height: 3rem;
+    width: 28rem;
+
+    margin-bottom: 2vmin;
+}
+
+
+/*========= NOSSOS NÚMEROS ========================*/
+.nossosNumeros{
+    background-color: var(--third-color);
+    height: 18vw;
+}
+
+.bolas{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 10vw;
+}
+
+.bola1 {
+    border-radius: 50%;
+    display: inline-block;
+    height: 9vw;
+    width: 9vw;
+    background-color: var(--primary-color);
+    align-items: center;
+    margin-top: 2vw;
+}
+.bola2 {
+    border-radius: 50%;
+    display: inline-block;
+    height: 9vw;
+    width: 9vw;
+    background-color: var(--segundary-color);
+    align-items: center;
+    margin-top: 2vw;
+}
+
+
+
+/*========= NOSSA EQUIPE ========================*/
+
+.nossaEquipe{
+    padding-top: 5vw;
+    width: 100%;
+}
+.nossaEquipe h2{
+    color: white;
+}
+
+.team{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 7vw;
+    padding-top: 5vw;
+}
+
+.teamPerson{
+    align-items: center;
+}
+
+.teamPerson{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--third-color);
+    margin: 0vw 2vw;
+}
+
+.teamPerson p{
+    text-align: left;
+    font-size: 1.3vw;
+    padding: 0vw 3.2vw 2vw 3.2vw;
+}
+
+.imgTeam{
+    align-items: center;
+
+
+    height: 12vw;
+    width: 16vw;
+    margin: 2.8vw 2.8vw 1vw 2.8vw;
+
+    border: .05px solid black;
+    box-shadow: 1px 3px 2px 1px rgba(128, 128, 128, .5)
+}
+
+.nossaEquipe::before {
+    content: '';
+    /*100vw dá erro por contar a barra de rolagem lateral*/
+    width: 100%;
+    height: 20rem;
+    background-color: var(--primary-color);
+    /*display block aceita largura e altura*/
+    display: block;
+  
+    /*Destrava top, left, right e botton*/
+    position: absolute;
+    top: 132vw;
+    left: 0;
+    z-index: -1;
+  }
+
+/*========= FALE CONOSCO ========================*/
+
+.faleConosco{
+
+    background-color: var(--third-color);
+
+    margin-top: 50px;
+
+    text-align: center;
+}
+
+.descritionFaleConosco{
+    display: flex;
+    flex-direction: row;
+
+    padding: 5vw 0vw;
+}
+
+.comunication{
+    display: flex;
+    flex-direction: column;
+
+    width: 50%;
+    gap: 3vw;
+
+    font-size: 1.4vw;
+    padding: 0vw 5vw;
+}
+
+.comunication p{
+    text-align: left;
+}
+
+.comunication button {
+    font-size: 1.7rem;
+    color: white;
+
+    height: 3rem;
+    width: 28rem;
+
+    margin-bottom: 2vmin;
+}
+#call{
+    background-color: var(--segundary-color);
+    
+}
+#message{
+    background-color: var(--primary-color);
+}
+
+.map{
+    background-color: white;
+
+    display: inline-block;
+    align-items: center;
+
+    height: 18vw;
+    width: 36vw;
+    margin-left: 10vw;
+
+    box-shadow: 0px 3px 2px 0px rgba(128, 128, 128, .5)
+}
+
+
+/*========= PARCEIROS ========================*/
+.parceiros{
+    display: flex;
+    flex-direction: column;
+}
+
+.parceiros h2{
+    padding-top: 5vw;
+}
+
+.parceiros div{
+    text-align: right;
+}
+
+.parceiros svg{
+    height: 5vw;
+}
+
+/*================= VAZIO=========================*/
+
+.vazia{
+    background-color: var(--primary-color);
+    height: 17vw;
+}
+
+/*========= RODAPÉ ========================*/
+
+
+.rodape{
+    background-color: var(--third-color);
+
+    display: flex;
+    flex-direction: row;
+    
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.rodape li{
+    display: inline-block;
+    padding: 2vw;
+    font-size: 1.4vw;
+    cursor: pointer;
+}
+.rodape li:hover{
+    background-color: #4441DF;
+    color: white;
+}
