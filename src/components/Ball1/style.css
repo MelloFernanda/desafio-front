@@ -1,0 +1,9 @@
+#bola {
+  border-radius: 50%;
+  display: inline-block;
+  height: 9vw;
+  width: 9vw;
+  background-color: var(--primary-color);
+  align-items: center;
+  margin-top: 2vw;
+}

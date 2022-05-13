@@ -1,0 +1,33 @@
+
+.project{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.NossosProjetos #project{
+  background-color: var(--third-color);
+  display: block;
+  width: 30vw;
+  height: 12vw;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 1vw 1vw -2vw 1vw;
+}
+
+.projects button {
+
+  background-color: var(--segundary-color);
+  color: white;
+  font-size: 1.7rem;
+  border-radius: 7px;
+
+  height: 3rem;
+  width: 28rem;
+
+  margin-bottom: 2vmin;
+}

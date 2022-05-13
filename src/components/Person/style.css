@@ -1,0 +1,39 @@
+
+
+.team{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 7vw;
+  padding-top: 5vw;
+}
+
+.teamPerson{
+  align-items: center;
+}
+
+.teamPerson{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--third-color);
+  margin: 0vw 2vw;
+}
+
+.teamPerson p{
+  text-align: left;
+  font-size: 1.3vw;
+  padding: 0vw 3vw 2vw 3vw;
+}
+
+.imgTeam{
+  align-items: center;
+
+
+  height: 12vw;
+  width: 16vw;
+  margin: 2.8vw 2.8vw 1vw 2.8vw;
+
+  border: .05px solid black;
+  box-shadow: 1px 3px 2px 1px rgba(128, 128, 128, .5)
+}

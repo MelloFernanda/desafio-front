@@ -1,11 +1,16 @@
 import React from "react"
 
 import Cabecalho from "../../Cabecalho"
+import Person from "../../Person"
 
 import "./style.css"
 
 import imgSAITE from "../../../assents/img/imgSAITE.png"
 import imgSAITE2 from "../../../assents/img/imgSAITE2.png"
+import Rodape from "../../Rodape"
+import Projeto from "../../Projeto"
+
+
 
 function Home (){
     return(
@@ -89,22 +94,10 @@ function Home (){
             <h2 className="textProjects">Nossos Projetos</h2>
                 
             <div className="projects">
-                <div className="project">
-                    <div id='project1'></div>
-                    <button className="botao" type="butoon">Clique</button>
-                </div>
-                <div className="project">
-                    <div id='project2'></div>
-                    <button className="botao" type="butoon">Clique</button>
-                </div>
-                <div className="project">
-                    <div id='project3'></div>
-                    <button className="botao" type="butoon">Clique</button>
-                </div>
-                <div className="project">
-                    <div id='project4'></div>
-                    <button className="botao" type="butoon">Clique</button>
-                </div>
+                <Projeto/>
+                <Projeto/>
+                <Projeto/>
+                <Projeto/>
             </div>    
         </section>
 
@@ -122,8 +115,7 @@ function Home (){
                 </div>
                 <div className="bola2">
                 </div>
-            </div>
-
+             </div>
         </section>
 
 
@@ -133,16 +125,13 @@ function Home (){
             
             <div className="team">
                 <di className="teamPerson">
-                    <div className="imgTeam"></div>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    <Person text="Lorem Ipsum is simply dummy text of the printing and typesetting industry"/>
                 </di>
                 <di className="teamPerson">
-                    <div className="imgTeam"></div>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    <Person text="Lorem Ipsum is simply dummy text of the printing and typesetting industry"/>
                 </di>
                 <di className="teamPerson">
-                    <div className="imgTeam"></div>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    <Person text="Lorem Ipsum is simply dummy text of the printing and typesetting industry"/>
                 </di>
             </div>
         </section>
@@ -184,28 +173,9 @@ function Home (){
 
         <div className="vazia"></div>
         
-        <section className="rodape">
-            <ul>
-                <li>
-                    Quem Somos
-                </li>
-                <li>
-                    Nossas Seleções
-                </li>
-                <li>
-                    Nossos Projetos
-                </li>
-                <li>
-                    Nossa Equipe
-                </li>
-                <li>
-                    Notícias
-                </li>
-                <li>
-                    Contato
-                </li>
-            </ul>
-        </section>
+
+        <Rodape/>
+
         </>
     )
 }

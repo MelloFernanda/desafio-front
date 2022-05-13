@@ -1,0 +1,22 @@
+.rodape{
+    background-color: var(--third-color);
+
+    display: flex;
+    flex-direction: row;
+    
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.rodape li{
+    display: inline-block;
+    padding: 2vw;
+    font-size: 1.4vw;
+    cursor: pointer;
+}
+.rodape li:hover{
+    background-color: var(--primary-color);
+    color: white;
+}

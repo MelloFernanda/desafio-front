@@ -1,0 +1,52 @@
+
+.acessibility{
+  background-color: var(--back-acessibility);
+  padding: 1vw 10vw 1vw 1vw;
+}
+
+.acessibility img{
+  width: 1vw;
+}
+
+.acessibility li{
+  display: inline-block;
+  cursor: pointer;
+  
+  font-size: 1.1vw;
+
+  border: 1px solid var(--back-acessibility);
+  border-radius: 100px;
+}
+
+.acessibility li:hover{
+  background-color: whitesmoke;
+  border: 1px solid var(--primary-color);
+  border-radius: 100px;
+}
+
+.acessibility ul{
+  display: flex;
+  justify-content: flex-end;
+
+  gap: 2vw;
+}
+
+.acessibility li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.acessibility #facebook,
+.acessibility #instagram{
+  width: 1.3vw;
+}
+.acessibility d{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#text{
+  padding-inline: 1vw;
+}
